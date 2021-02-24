@@ -1,8 +1,19 @@
-<form action="">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email">
-    <br>
-    <label for="message">Message</label>
-    <textarea name="message" id="" cols="30" rows="10"></textarea>
+<form action="https://todolist0987.000webhostapp.com/" method="post">
+    <div>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email">
+    </div>
 
+    <div>
+        <label for="message">Message</label>
+        <br>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+    </div>
+    <button type="submit">Submit</button>
+    <input type="hidden" name="source" value="">
 </form>
+
+<script>
+    document.querySelector('[name="source"]').value = location.href;
+</script>
